@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索影片-精选欧美电影</title>
+  <meta name="description" content="在精选欧美电影高清电影片库中搜索影片名称、标签、地区、年份和类型。" />
+  <meta name="keywords" content="精选欧美电影,高清电影片库,欧美电影,电影分类,热门欧美电影,高分欧美电影,内容更新,电影搜索" />
+  <link rel="stylesheet" href="./assets/site.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./index.html" aria-label="精选欧美电影">
+      <span class="brand-icon">◆</span>
+      <span>精选欧美电影</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="菜单" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="main-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <div class="nav-dropdown">
+        <a class="nav-link" href="./categories.html">分类</a>
+        <div class="dropdown-panel">
+            <a href="./category-selected-european.html">欧美佳片</a>
+            <a href="./category-action-adventure.html">动作冒险</a>
+            <a href="./category-suspense-thriller.html">悬疑惊悚</a>
+            <a href="./category-drama-life.html">剧情高分</a>
+            <a href="./category-romance-comedy.html">爱情喜剧</a>
+            <a href="./category-fantasy-scifi.html">奇幻科幻</a>
+            <a href="./category-animation-family.html">动画家庭</a>
+            <a href="./category-urban-stories.html">都市生活</a>
+        </div>
+      </div>
+      <a class="nav-link" href="./rankings.html">排行榜</a>
+      <a class="nav-link active" href="./search.html">搜索</a>
+    </nav>
+    <form class="top-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片、类型、地区" aria-label="搜索影片" />
+      <button type="submit">搜索</button>
+    </form>
+  </div>
+</header>
+<main>
+  <section class="page-hero compact-hero">
+    <div>
+      <span class="eyebrow">Search</span>
+      <h1>搜索影片</h1>
+      <p>输入关键词，快速筛选影片名称、题材标签、地区、年份与类型。</p>
+    </div>
+  </section>
+  <section class="search-panel">
+    <form class="search-page-form" id="searchForm">
+      <input id="searchInput" type="search" name="q" placeholder="输入影片名、标签、年份、地区" />
+      <select id="categorySelect" aria-label="按分类筛选">
+        <option value="">全部分类</option>
+        <option value="欧美佳片">欧美佳片</option>
+        <option value="动作冒险">动作冒险</option>
+        <option value="悬疑惊悚">悬疑惊悚</option>
+        <option value="剧情高分">剧情高分</option>
+        <option value="爱情喜剧">爱情喜剧</option>
+        <option value="奇幻科幻">奇幻科幻</option>
+        <option value="动画家庭">动画家庭</option>
+        <option value="都市生活">都市生活</option>
+        <option value="犯罪警匪">犯罪警匪</option>
+        <option value="热门新片">热门新片</option>
+      </select>
+      <button type="submit">搜索</button>
+    </form>
+  </section>
+  <section class="section-block">
+    <div class="section-heading">
+      <span>Results</span>
+      <h2 id="searchTitle">搜索结果</h2>
+      <p id="searchHint">输入关键词或选择分类后开始浏览。</p>
+    </div>
+    <div class="movie-grid" id="searchResults"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wave-shape" aria-hidden="true"></div>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a class="brand" href="./index.html">
+        <span class="brand-icon">◆</span>
+        <span>精选欧美电影</span>
+      </a>
+      <p>精选欧美电影栏目按类型和热度整理欧美影片，提供持续更新的电影片库。</p>
+    </div>
+    <div>
+      <h2>快速导航</h2>
+      <div class="footer-links">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">全部分类</a>
+        <a href="./rankings.html">排行榜</a>
+        <a href="./search.html">搜索影片</a>
+      </div>
+    </div>
+    <div>
+      <h2>精选分类</h2>
+      <div class="footer-links">
+        <a href="./category-selected-european.html">欧美佳片</a>
+        <a href="./category-action-adventure.html">动作冒险</a>
+        <a href="./category-suspense-thriller.html">悬疑惊悚</a>
+        <a href="./category-drama-life.html">剧情高分</a>
+        <a href="./category-romance-comedy.html">爱情喜剧</a>
+        <a href="./category-fantasy-scifi.html">奇幻科幻</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">© 精选欧美电影 · 高清电影片库</div>
+</footer>
+  <script src="./assets/search-data.js"></script>
+  <script src="./assets/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
+
